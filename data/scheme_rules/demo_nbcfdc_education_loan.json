@@ -1,0 +1,71 @@
+{
+  "scheme_id": "demo_nbcfdc_education_loan",
+  "name": "NBCFDC Education Loan (Demo Placeholder)",
+  "version": 1,
+  "category": "education_loan",
+  "description": "Placeholder rule data modelled on the NBCFDC education loan scheme for OBC/EBC/DNT applicants. DEMO DATA ONLY.",
+  "demo_data": true,
+  "tags": ["education", "obc", "nbcfdc", "demo"],
+  "source": {
+    "type": "demo_placeholder",
+    "url": "https://www.nbcfdc.gov.in/",
+    "note": "Placeholder pending the official NBCFDC document. Not an official source.",
+    "document_file": "demo_nbcfdc_education_loan.txt"
+  },
+  "eligibility_rules": [
+    {
+      "rule_id": "category",
+      "field": "category",
+      "operator": "in",
+      "values": ["OBC", "EBC", "DNT"],
+      "description": "Applicant must belong to OBC, EBC or DNT category.",
+      "critical": true,
+      "source": { "section": "Eligibility - Category" }
+    },
+    {
+      "rule_id": "income_limit",
+      "field": "annual_income",
+      "operator": "threshold_map",
+      "direction": "lte",
+      "thresholds": { "rural": 100000, "urban": 120000, "default": 120000 },
+      "location_field": "location_type",
+      "unit": "INR",
+      "description": "Annual family income must not exceed the rural/urban limit (rural INR 1,00,000, urban INR 1,20,000).",
+      "critical": true,
+      "source": { "section": "Eligibility - Income" }
+    },
+    {
+      "rule_id": "age_limit",
+      "field": "age",
+      "operator": "between",
+      "min_value": 18,
+      "max_value": 35,
+      "description": "Applicant age must be between 18 and 35 years.",
+      "critical": true,
+      "source": { "section": "Eligibility - Age" }
+    },
+    {
+      "rule_id": "course_level",
+      "field": "course_level",
+      "operator": "in",
+      "values": ["undergraduate", "postgraduate", "professional", "diploma", "certificate"],
+      "description": "Course must be an undergraduate, postgraduate, professional, diploma or certificate course.",
+      "critical": true,
+      "source": { "section": "Eligibility - Course" }
+    }
+  ],
+  "financials": {
+    "min_principal": 10000,
+    "max_principal": 1200000,
+    "interest_rate_annual_percent": 10.5,
+    "tenure_months_options": [12, 24, 36, 48, 60, 72],
+    "default_tenure_months": 48,
+    "processing_fee_percent": 0,
+    "repayment_frequency": "monthly",
+    "source_note": "Demo financial parameters pending the official rate table."
+  },
+  "claims": [
+    "Annual family income limit is INR 1,00,000 for rural applicants and INR 1,20,000 for urban applicants.",
+    "The education loan interest rate is 10.5% per annum."
+  ]
+}

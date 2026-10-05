@@ -1,0 +1,6 @@
+# NidhiSetu backend - dev/test dependencies
+-r requirements.txt
+
+pytest==8.3.4
+pytest-asyncio==0.25.0
+mongomock-motor==0.0.34

@@ -1,0 +1,38 @@
+scheme_id: demo_nfsdc_education_loan
+title: NSFDC Education Loan - Demo Placeholder Guideline Document
+source_url: https://www.nsfdc.nic.in/ (placeholder)
+note: DEMO PLACEHOLDER DOCUMENT. This is not an official government document. Replace it through the admin ingestion endpoint or the bulk script with the real NSFDC document.
+
+1. Objective
+This education loan supports Scheduled Caste students pursuing higher education in India by financing tuition fees, maintenance costs and related expenses.
+
+2. Eligibility
+
+2.1 Category
+Applicant must belong to a Scheduled Caste (SC) family.
+
+2.2 Annual family income
+The annual family income limit is INR 81,000 for rural applicants.
+The annual family income limit is INR 1,03,000 for urban applicants.
+Applicants above the applicable limit are not eligible under this scheme.
+
+2.3 Age
+Applicant age must be between 18 and 35 years on the date of application.
+
+2.4 Course
+Course must be an undergraduate, postgraduate, professional, diploma or certificate course.
+
+3. Loan amount and interest
+Maximum loan amount: INR 15,00,000.
+Interest rate: 10% per annum on the reducing balance.
+Tenure: 12 to 72 months, monthly repayment.
+
+4. Repayment
+Repayment is monthly. EMI is calculated on a reducing balance basis at 10% per annum.
+A moratorium may be available while the student is studying, as decided by the sponsoring institution.
+
+5. Documents required
+Category certificate, income certificate, admission proof, fee structure, bank account details.
+
+6. Disclaimer
+This placeholder document is demo data created for the NidhiSetu portfolio project. All numbers are illustrative and must not be used for real applications.

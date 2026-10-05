@@ -1,0 +1,33 @@
+scheme_id: demo_nbcfdc_education_loan
+title: NBCFDC Education Loan - Demo Placeholder Guideline Document
+source_url: https://www.nbcfdc.gov.in/ (placeholder)
+note: DEMO PLACEHOLDER DOCUMENT. This is not an official government document.
+
+1. Objective
+Education loan support for students from Other Backward Classes (OBC), Economically Backward Classes (EBC) and De-notified Tribes (DNT).
+
+2. Eligibility
+
+2.1 Category
+Applicant must belong to OBC, EBC or DNT category.
+
+2.2 Annual family income
+Annual family income limit for rural applicants is INR 1,00,000.
+Annual family income limit for urban applicants is INR 1,20,000.
+
+2.3 Age
+Applicant age must be between 18 and 35 years.
+
+2.4 Course
+Undergraduate, postgraduate, professional, diploma and certificate courses are covered.
+
+3. Loan amount and interest
+Maximum loan amount: INR 12,00,000.
+Interest rate: 10.5% per annum on the reducing balance.
+Tenure: 12 to 72 months.
+
+4. Repayment
+Monthly installments on reducing balance. The repayment schedule is shared with the applicant before disbursement.
+
+5. Disclaimer
+Demo placeholder content for the NidhiSetu portfolio project. Illustrative numbers only.
