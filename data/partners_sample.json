@@ -1,0 +1,107 @@
+{
+  "demo_data": true,
+  "disclaimer": "DEMO PLACEHOLDER DATASET. These are fictional sample records with example.org contact details, intended only to demonstrate deterministic scheme_id + state partner matching. They are not a real SCA/partner directory and must not be used as real referrals.",
+  "partners": [
+    {
+      "partner_id": "P001",
+      "name": "Bihar Udyam Sahayata Kendra (Demo)",
+      "states": ["Bihar"],
+      "scheme_ids": ["demo_micro_finance", "demo_term_loan"],
+      "contact_email": "demo.bihar@example.org",
+      "contact_phone": "+91-90000-00001",
+      "address": "Demo address, Patna, Bihar",
+      "languages": ["Hindi", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P002",
+      "name": "Purvanchal Livelihood Support Centre (Demo)",
+      "states": ["Uttar Pradesh"],
+      "scheme_ids": ["demo_micro_finance", "demo_nbcfdc_education_loan"],
+      "contact_email": "demo.up@example.org",
+      "contact_phone": "+91-90000-00002",
+      "address": "Demo address, Lucknow, Uttar Pradesh",
+      "languages": ["Hindi", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P003",
+      "name": "Sahyadri Enterprise Facilitation Cell (Demo)",
+      "states": ["Maharashtra"],
+      "scheme_ids": ["demo_term_loan", "demo_micro_finance"],
+      "contact_email": "demo.mh@example.org",
+      "contact_phone": "+91-90000-00003",
+      "address": "Demo address, Pune, Maharashtra",
+      "languages": ["Marathi", "Hindi", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P004",
+      "name": "Chola Education Support Trust (Demo)",
+      "states": ["Tamil Nadu", "Puducherry"],
+      "scheme_ids": ["demo_nfsdc_education_loan", "demo_nbcfdc_education_loan"],
+      "contact_email": "demo.tn@example.org",
+      "contact_phone": "+91-90000-00004",
+      "address": "Demo address, Chennai, Tamil Nadu",
+      "languages": ["Tamil", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P005",
+      "name": "Bangla Gramin Unnayan Society (Demo)",
+      "states": ["West Bengal"],
+      "scheme_ids": ["demo_nfsdc_education_loan", "demo_micro_finance"],
+      "contact_email": "demo.wb@example.org",
+      "contact_phone": "+91-90000-00005",
+      "address": "Demo address, Kolkata, West Bengal",
+      "languages": ["Bengali", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P006",
+      "name": "Karnataka Skills Bridge Foundation (Demo)",
+      "states": ["Karnataka"],
+      "scheme_ids": ["demo_nfsdc_education_loan", "demo_term_loan"],
+      "contact_email": "demo.ka@example.org",
+      "contact_phone": "+91-90000-00006",
+      "address": "Demo address, Bengaluru, Karnataka",
+      "languages": ["Kannada", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P007",
+      "name": "Marudhara Micro Enterprise Cell (Demo)",
+      "states": ["Rajasthan"],
+      "scheme_ids": ["demo_micro_finance"],
+      "contact_email": "demo.rj@example.org",
+      "contact_phone": "+91-90000-00007",
+      "address": "Demo address, Jaipur, Rajasthan",
+      "languages": ["Hindi", "English"],
+      "is_demo": true,
+      "note": "Demo record for portfolio purposes only."
+    },
+    {
+      "partner_id": "P008",
+      "name": "National Scheme Facilitation Desk (Demo, all-India)",
+      "states": ["*"],
+      "scheme_ids": [
+        "demo_micro_finance",
+        "demo_term_loan",
+        "demo_nfsdc_education_loan",
+        "demo_nbcfdc_education_loan"
+      ],
+      "contact_email": "demo.helpdesk@example.org",
+      "contact_phone": "+91-90000-00008",
+      "address": "Demo address, New Delhi (all-India desk)",
+      "languages": ["English", "Hindi"],
+      "is_demo": true,
+      "note": "Demo record with an all-India wildcard state, used to demonstrate wildcard matching."
+    }
+  ]
+}

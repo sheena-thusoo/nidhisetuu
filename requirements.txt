@@ -1,0 +1,37 @@
+# NidhiSetu backend - runtime dependencies (Python 3.11, pinned)
+# NOTE: apify is intentionally NOT a dependency of this project (explicitly out of scope).
+
+# --- web / api ---
+fastapi==0.115.6
+uvicorn[standard]==0.32.1
+python-multipart==0.0.20
+slowapi==0.1.9
+
+# --- validation / settings ---
+pydantic==2.10.4
+pydantic-settings==2.7.1
+email-validator==2.2.0
+python-dotenv==1.0.1
+
+# --- database ---
+motor==3.6.0
+
+# --- auth ---
+PyJWT==2.10.1
+bcrypt==4.2.1
+
+# --- background jobs ---
+redis==5.2.1
+rq==2.1.0
+
+# --- agentic layer ---
+langchain-core==0.3.29
+langgraph==0.2.60
+langchain-groq==0.2.2
+
+# --- rag / retrieval ---
+pinecone==5.4.2
+httpx==0.28.1
+beautifulsoup4==4.12.3
+lxml==5.3.0
+pdfplumber==0.11.4

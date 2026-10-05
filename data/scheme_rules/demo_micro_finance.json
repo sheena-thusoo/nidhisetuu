@@ -1,0 +1,73 @@
+{
+  "scheme_id": "demo_micro_finance",
+  "name": "Micro Finance Loan (Demo Placeholder)",
+  "version": 1,
+  "category": "micro_finance",
+  "description": "Placeholder micro-finance scheme data for small enterprises. Includes an advisory (non-critical) priority rule. DEMO DATA ONLY.",
+  "demo_data": true,
+  "tags": ["micro_finance", "enterprise", "demo"],
+  "source": {
+    "type": "demo_placeholder",
+    "url": "https://www.nsfdc.nic.in/",
+    "note": "Placeholder micro-finance rule data. Not an official source.",
+    "document_file": "demo_micro_finance.txt"
+  },
+  "eligibility_rules": [
+    {
+      "rule_id": "age_limit",
+      "field": "age",
+      "operator": "between",
+      "min_value": 18,
+      "max_value": 60,
+      "description": "Applicant age must be between 18 and 60 years.",
+      "critical": true,
+      "source": { "section": "Eligibility - Age" }
+    },
+    {
+      "rule_id": "income_limit",
+      "field": "annual_income",
+      "operator": "threshold_map",
+      "direction": "lte",
+      "thresholds": { "rural": 120000, "urban": 160000, "default": 160000 },
+      "location_field": "location_type",
+      "unit": "INR",
+      "description": "Annual family income must not exceed the rural/urban limit (rural INR 1,20,000, urban INR 1,60,000).",
+      "critical": true,
+      "source": { "section": "Eligibility - Income" }
+    },
+    {
+      "rule_id": "business_vintage",
+      "field": "years_in_operation",
+      "operator": "gte",
+      "value": 1,
+      "unit": "years",
+      "description": "The micro-enterprise must have been operating for at least 1 year.",
+      "critical": true,
+      "source": { "section": "Eligibility - Enterprise" }
+    },
+    {
+      "rule_id": "priority_group",
+      "field": "gender",
+      "operator": "in",
+      "values": ["female", "transgender"],
+      "description": "Advisory: priority is given to women-led and transgender-led enterprises. Not a disqualifier.",
+      "critical": false,
+      "source": { "section": "Priority" }
+    }
+  ],
+  "financials": {
+    "min_principal": 5000,
+    "max_principal": 60000,
+    "interest_rate_annual_percent": 12.0,
+    "tenure_months_options": [12, 18, 24, 30, 36],
+    "default_tenure_months": 24,
+    "processing_fee_percent": 1.0,
+    "repayment_frequency": "monthly",
+    "source_note": "Demo financial parameters."
+  },
+  "claims": [
+    "Annual family income limit is INR 1,20,000 for rural applicants and INR 1,60,000 for urban applicants.",
+    "The micro finance loan interest rate is 12% per annum.",
+    "The maximum micro finance loan amount is INR 60,000."
+  ]
+}
